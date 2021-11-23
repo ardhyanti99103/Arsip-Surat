@@ -28,14 +28,6 @@ include 'layout/header.php';
         </div>
 
         <!-- row -->
-        <!-- <div class="row page-titles mx-0">
-            <div class="col-sm-6 p-md-0">
-                <div class="welcome-text text-dark">
-                    <span>Unggah surat yang telah terbit pada form ini untuk diarsipkan.</span>
-                    <p>Catatan: Gunakan file berformat PDF</p>
-                </div>
-            </div>
-        </div> -->
 
         <div class="row">
             <div class="col-xl-6 col-xxl-12">

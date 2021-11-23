@@ -77,7 +77,7 @@ include 'layout/header.php';
 
                         <div class="text-center mb-2">
                         <a href="index.php" class="btn btn-primary">Kembali</a>
-                        <a href="../arsip_surat/arsip/<?php echo $p['file']; ?>" class="btn btn-warning" download>Unduh</a>
+                        <a href="../arsip_surat/arsip/<?php echo $p['file']; ?>" class="btn btn-warning" >Unduh</a>
                         <a href="arsip_edit.php?id=<?php echo $p['id']; ?>" class="btn btn-success">Edit/Ganti File</a>
                         </div>
                         <?php 
