@@ -32,7 +32,7 @@ include 'layout/header.php';
                         <?php 
                         $id = $_GET['id'];  
                         $arsip = mysqli_query($koneksi,"SELECT kategori.nama as namakat, kategori.id, arsip_surat.id,arsip_surat.no_surat, arsip_surat.judul, arsip_surat.id_kategori, arsip_surat.file , arsip_surat.tanggal   
-                                FROM arsip_surat , kategori WHERE kategori.id = arsip_surat.id_kategori");
+                                FROM arsip_surat , kategori WHERE kategori.id = arsip_surat.id_kategori and arsip_surat.id='$id'");
                         while($p = mysqli_fetch_array($arsip)){
                         ?>
                         <div class="row mb-4">
@@ -72,13 +72,13 @@ include 'layout/header.php';
                         </div>
 
                         <p style="">
-                        <iframe src="arsip/<?php echo $p['file']; ?>" style="width: 100%; height:800px;"></iframe>
+                        <iframe src="arsip/<?php echo $p['file']; ?>" style="width: 100%; height:600px;"></iframe>
                         </p>
 
                         <div class="text-center mb-2">
                         <a href="index.php" class="btn btn-primary">Kembali</a>
-                        <a href="arsip/<?php echo $p['file']; ?>" class="btn btn-warning" download>Unduh</a>
-                        <a href="arsip_edit.php?id=<?php echo $p['id']; ?>" class="btn btn-success">Edit</a>
+                        <a href="../arsip_surat/arsip/<?php echo $p['file']; ?>" class="btn btn-warning" download>Unduh</a>
+                        <a href="arsip_edit.php?id=<?php echo $p['id']; ?>" class="btn btn-success">Edit/Ganti File</a>
                         </div>
                         <?php 
                         }

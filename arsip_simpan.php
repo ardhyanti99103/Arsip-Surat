@@ -6,7 +6,7 @@ date_default_timezone_set('Asia/Jakarta');
 $no_surat       = $_POST['no_surat'];
 $id_kategori    = $_POST['id_kategori'];
 $judul          = $_POST['judul'];		
-$tanggal      = date('Y-m-d'); 
+$tanggal        = date('Y/m/d h:i:sa'); 
 
 $rand = rand();
 

@@ -107,9 +107,9 @@
             <div class="quixnav-scroll">
                 <ul class="metismenu" id="menu">
                     <li class="nav-label first">Main Menu</li>
-                    <li><a href="index.php"><i class="icon icon-single-04"></i><span class="nav-text">Arsip</span></a>
+                    <li><a href="index.php"><i class="icon icon-app-store"></i><span class="nav-text">Arsip</span></a>
                     </li>
-                    <li><a href="about.php"><i class="icon icon-info"></i><span class="nav-text">About</span></a>
+                    <li><a href="about.php"><i class="icon icon-world-2"></i><span class="nav-text">About</span></a>
                     </li>
                 </ul>
             </div>

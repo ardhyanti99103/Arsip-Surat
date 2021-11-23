@@ -12,8 +12,11 @@ include 'layout/header.php';
         <div class="row page-titles mx-0">
             <div class="col-sm-6 p-md-0">
                 <div class="welcome-text">
-                    <h4>Hi, welcome back!</h4>
-                    <span class="ml-1">Aplikasi Arsip Surat</span>
+                    <h4>Arsip Surat >> Unggah</h4>
+                    <ol class="breadcrumb">
+                        Unggah surat yang telah terbit pada form ini untuk diarsipkan <br>
+                        Catatan: Gunakan file berformat PDF
+                    </ol>
                 </div>
             </div>
             <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
@@ -39,7 +42,7 @@ include 'layout/header.php';
                 <div class="card">
 
                     <div class="card-header">
-                        <h4 class="card-title">Form Tambah Arsip Surat</h4>
+                        <h4 class="card-title">Form Unggah Arsip Surat</h4>
                     </div>
                     
                     <form role="form" method="POST" action="arsip_simpan.php" enctype="multipart/form-data">
@@ -92,10 +95,7 @@ include 'layout/header.php';
                                                 <label><strong>File Surat (PDF)</strong></label>
                                             </div>
                                             <div class="col-md-9"> 
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="file" name="file">
-                                                    <label class="custom-file-label">Choose file</label>
-                                                </div>
+                                                <input type="file" id="file" name="file">
                                             </div>
                                         </div>
                                     </div>
@@ -104,7 +104,8 @@ include 'layout/header.php';
                             </div>
                         </div> <!--end of card body -->
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <a href="index.php" class="btn btn-primary">Kembali</a>
+                            <button type="submit" class="btn btn-success">Simpan</button>
                         </div>     
                     </form>
                 </div>
